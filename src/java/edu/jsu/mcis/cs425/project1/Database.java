@@ -136,7 +136,7 @@ public class Database {
             
             results.put("displayname", dpname);
             
-            code = String.format("R" + "%0" + (6-id.length()) + "d%s", 0, id);
+            code = String.format("R" + "%0" + (6-sessionid.length()) + "d%s", 0, sessionid);
             results.put("code", code);           
         }
         
