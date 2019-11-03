@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="Scripts/Function.js"></script>
+    </head>
+    <body>
+        <a href = "/CS425Project1"> Search registrations</a>
+        <a href = "/CS425Project1/regdata.html"> Register Attendee</a>
+        
+        <form>
+            <p>
+                <label>First Name</label>
+                <input type="text" name="firstname" id="first" class="formField">
+            </p>
+        
+            <p>
+                <label>Last Name</label>
+                <input type="text" name="lastname" id="last" class="formField">
+            </p>
+        
+            <p>
+                <label>Display Name</label>
+                <input type="text" name="displayname" id="dpname" class="formField">
+            </p>
+        </form>
+        
+        <p>
+            <select>
+                <option value = "1"> Session 1 </option>
+                <option value = "2"> Session 2 </option>
+                <option value = "3"> Session 3 </option>
+                <option value = "4"> Session 4 </option>
+            </select>
+        </p>
+        
+        <p>
+            <input type="submit" value="Submit" onclick="Function.addEntry()">
+        </p>
+        
+        <div id="output"></div>
+        
+        <script>
+            $(".formField").change(function(){
+                
+                var dpname = $("#first").val() + " " + $("#last").val();
+                $("#dpname").val(dpname);
+                
+            });      
+        </script>
+    </body>
+</html>

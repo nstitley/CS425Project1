@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="Scripts/Function.js"></script>
+        <style>
+            table{
+                text-align:center;
+                font-family:sans-serif;
+                border: 1px black;
+                width: 100%;
+            }
+            th{
+                background-color:crimson;
+                outline: 2px black;
+                height: 50px;
+            }
+            tr,td{
+                background-color:lightgrey;
+                outline: 2px black;
+                height: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href = "/CS425Project1"> Search registrations</a>
+        <a href = "/CS425Project1/regdata.html"> Register Attendee</a>
+        
+        <p>
+            <select>
+                <option value = "1"> Session 1 </option>
+                <option value = "2"> Session 2 </option>
+                <option value = "3"> Session 3 </option>
+                <option value = "4"> Session 4 </option>
+            </select>
+        </p>
+        
+        <p>
+            <input type="submit" value="Submit" onclick="Function.getData();">
+        </p>
+        
+        <div id="output"> </div>
+    </body>
+</html>
